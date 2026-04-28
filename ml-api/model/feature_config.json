@@ -1,0 +1,55 @@
+{
+  "numeric_features": [
+    "Age",
+    "Weight_kg",
+    "Height_cm",
+    "BMI",
+    "Daily_Caloric_Intake",
+    "Cholesterol_mg/dL",
+    "Blood_Pressure_mmHg",
+    "Glucose_mg/dL",
+    "Weekly_Exercise_Hours",
+    "Adherence_to_Diet_Plan",
+    "Dietary_Nutrient_Imbalance_Score"
+  ],
+  "categorical_features": [
+    "Gender",
+    "Disease_Type",
+    "Severity",
+    "Physical_Activity_Level",
+    "Allergies",
+    "Preferred_Cuisine",
+    "Dietary_Restrictions"
+  ],
+  "all_features_order": [
+    "Age",
+    "Weight_kg",
+    "Height_cm",
+    "BMI",
+    "Daily_Caloric_Intake",
+    "Cholesterol_mg/dL",
+    "Blood_Pressure_mmHg",
+    "Glucose_mg/dL",
+    "Weekly_Exercise_Hours",
+    "Adherence_to_Diet_Plan",
+    "Dietary_Nutrient_Imbalance_Score",
+    "Gender",
+    "Disease_Type",
+    "Severity",
+    "Physical_Activity_Level",
+    "Allergies",
+    "Preferred_Cuisine",
+    "Dietary_Restrictions"
+  ],
+  "n_classes": 3,
+  "pgs_features_added": 6,
+  "enriched_dim": 24,
+  "target_classes": [
+    "Balanced",
+    "Low_Carb",
+    "Low_Sodium"
+  ],
+  "plain_mlp_accuracy": 0.84,
+  "pgs_mlp_accuracy": 0.865,
+  "model_used": "pgs_stacked_mlp"
+}

@@ -1,0 +1,165 @@
+Food_Name,Category,Calories,Protein,Carbs,Fat,Fiber,Sugar,Sodium,Cholesterol (mg),Meal_Type,Water_Intake (ml),Food_Type,Cholesterol
+Fruit Salad (Low Sugar Fruits),Vegetarian,242,5.5,46.5,10.3,5.3,2.6,41.0,10.0,Snack,447.0,Fruits,0.0
+Almonds (Soaked),Vegetarian,108,6.8,25.6,9.3,4.5,3.2,281.0,69.0,Snack,244.0,Nuts & Seeds,0.0
+Grilled Fish (Low Salt),Non-Vegetarian,170,12.5,47.2,6.6,4.3,6.0,169.0,78.0,Lunch,388.0,Animal Protein,0.0
+Vegetable Upma,Vegetarian,230,14.8,11.3,8.8,5.5,1.9,177.0,1.0,Breakfast,288.0,Grains & Cereals,0.0
+Walnuts,Vegetarian,180,13.0,19.1,1.2,4.9,8.5,212.0,37.0,Snack,435.0,Nuts & Seeds,0.0
+Moong Dal,Vegetarian,141,7.5,36.6,11.1,6.6,4.3,119.0,33.0,Lunch,415.0,Pulses & Legumes,0.0
+Vegetable Curry (Low Oil),Vegetarian,137,10.6,20.3,7.6,5.8,5.8,101.0,36.0,Lunch,373.0,Vegetables,0.0
+Oats Khichdi,Vegetarian,94,17.2,31.8,4.6,7.8,7.2,239.0,15.0,Dinner,470.0,Grains & Cereals,0.0
+Poha (Less Oil),Vegetarian,107,3.3,10.3,6.2,6.9,5.7,68.0,38.0,Breakfast,461.0,Grains & Cereals,0.0
+Lauki Sabzi,Vegetarian,133,4.2,37.1,4.6,10.0,9.6,219.0,51.0,Lunch,368.0,Vegetables,0.0
+Low-fat Paneer Bhurji,Vegetarian,138,3.3,28.7,2.4,2.5,4.4,283.0,79.0,Breakfast,539.0,Plant Protein,0.0
+Paneer (Low Fat) Curry,Vegetarian,120,14.5,12.5,5.6,3.6,2.7,144.0,79.0,Dinner,168.0,Plant Protein,0.0
+Idli,Vegetarian,159,5.2,41.3,10.9,3.8,1.6,208.0,16.0,Breakfast,377.0,Mixed/Other,0.0
+Vegetable Khichdi,Vegetarian,281,14.2,17.4,4.9,5.2,5.6,81.0,73.0,Dinner,369.0,Vegetables,0.0
+Buttermilk (Low Salt),Vegetarian,297,7.4,26.3,4.0,11.0,5.6,25.0,76.0,Snack,252.0,Beverages,0.0
+Moong Dal Chilla,Vegetarian,257,3.0,30.2,10.6,7.6,1.5,112.0,2.0,Breakfast,372.0,Pulses & Legumes,0.0
+Palak Dal,Vegetarian,254,8.4,33.5,9.2,9.4,8.0,196.0,65.0,Lunch,507.0,Pulses & Legumes,0.0
+Spinach Soup,Vegetarian,208,6.3,47.3,7.4,2.1,7.6,67.0,76.0,Dinner,294.0,Mixed/Other,0.0
+Multigrain Roti,Vegetarian,138,19.6,32.4,4.9,10.7,7.9,257.0,13.0,Lunch,216.0,Grains & Cereals,0.0
+Boiled Chicken (Low Salt),Non-Vegetarian,187,10.7,23.7,11.6,3.1,1.5,272.0,4.0,Lunch,395.0,Animal Protein,0.0
+Sprouts Salad,Vegetarian,196,19.2,48.2,7.1,9.9,1.3,209.0,50.0,Snack,160.0,Fruits,0.0
+Tori Sabzi,Vegetarian,120,6.6,12.2,8.2,8.5,8.2,182.0,72.0,Lunch,561.0,Vegetables,0.0
+Masoor Dal,Vegetarian,294,15.5,20.3,5.2,8.0,9.3,149.0,44.0,Lunch,292.0,Pulses & Legumes,0.0
+Steamed Vegetables,Vegetarian,298,11.1,14.6,8.4,2.2,8.3,208.0,80.0,Dinner,213.0,Beverages,0.0
+Oats Porridge,Vegetarian,116,14.0,29.3,1.9,9.1,9.3,257.0,50.0,Breakfast,473.0,Grains & Cereals,0.0
+Brown Rice,Vegetarian,72,11.7,33.8,4.4,11.1,9.6,50.0,27.0,Lunch,473.0,Grains & Cereals,0.0
+Tandoori Chicken (Low Salt),Non-Vegetarian,158,4.3,26.6,5.5,9.6,4.3,257.0,40.0,Dinner,462.0,Animal Protein,0.0
+Roasted Chana,Vegetarian,216,11.2,35.9,2.2,7.2,5.5,164.0,34.0,Snack,367.0,Mixed/Other,0.0
+Vegetable Daliya,Vegetarian,295,16.6,32.8,2.6,11.8,9.0,42.0,65.0,Breakfast,205.0,Pulses & Legumes,0.0
+Coconut Water,Vegetarian,202,18.5,34.3,11.2,7.0,5.3,259.0,11.0,Snack,296.0,Mixed/Other,0.0
+Mixed Veg Soup,Vegetarian,239,17.3,14.0,5.5,3.2,5.4,87.0,42.0,Dinner,336.0,Mixed/Other,0.0
+Ragi Dosa,,127,14.8,10.7,12.0,9.4,6.1,111.3,,Breakfast,,Mixed/Other,0.0
+Besan Chilla,,176,13.8,11.5,6.2,9.6,3.0,52.1,,Breakfast,,Mixed/Other,0.0
+Vegetable Omelette,,135,21.5,26.2,3.9,8.2,6.3,182.9,,Breakfast,,Mixed/Other,0.0
+Boiled Eggs,,207,13.1,18.7,5.0,9.2,7.1,176.9,,Breakfast,,Mixed/Other,0.0
+Sprouts Bowl,,314,10.0,42.4,14.9,3.2,5.0,147.0,,Breakfast,,Mixed/Other,0.0
+Fruit Yogurt Bowl,,218,20.7,15.0,14.1,3.8,4.7,71.6,,Breakfast,,Mixed/Other,0.0
+Peanut Chaat,,272,14.5,28.9,12.7,8.5,3.1,125.0,,Breakfast,,Mixed/Other,0.0
+Millet Upma,,275,10.7,32.2,10.5,2.0,2.5,153.4,,Breakfast,,Mixed/Other,0.0
+Quinoa Porridge,,281,12.6,31.2,13.3,3.9,3.2,86.4,,Breakfast,,Mixed/Other,0.0
+Chia Pudding,,237,14.3,37.6,2.1,3.9,1.1,117.8,,Breakfast,,Mixed/Other,0.0
+Banana Smoothie (No Sugar),,174,10.6,41.7,10.2,6.6,6.1,136.6,,Breakfast,,Mixed/Other,0.0
+Apple Cinnamon Oats,,288,15.4,28.3,8.2,4.5,2.2,112.7,,Breakfast,,Mixed/Other,0.0
+Vegetable Sandwich (Brown Bread),,121,23.3,18.0,4.2,3.3,7.9,173.7,,Breakfast,,Mixed/Other,0.0
+Tofu Scramble,,274,20.3,18.4,13.8,8.9,0.8,147.3,,Breakfast,,Mixed/Other,0.0
+Moong Sprouts Pancake,,314,7.9,13.9,6.7,6.0,7.9,49.3,,Breakfast,,Mixed/Other,0.0
+Vegetable Idli,,120,9.4,24.7,5.4,3.7,4.9,59.0,,Breakfast,,Mixed/Other,0.0
+Oats Idli,,223,6.9,14.4,11.6,5.9,6.1,31.0,,Breakfast,,Mixed/Other,0.0
+Ragi Porridge,,281,14.1,17.2,8.4,8.8,7.8,129.1,,Breakfast,,Mixed/Other,0.0
+Almond Milk Smoothie,,128,15.6,13.5,9.2,4.4,0.4,118.0,,Breakfast,,Mixed/Other,0.0
+Mixed Seeds Bowl,,218,14.6,11.2,3.8,2.8,7.6,163.2,,Breakfast,,Mixed/Other,0.0
+Avocado Toast (Whole Grain),,189,13.9,28.8,7.5,6.1,7.3,166.7,,Breakfast,,Mixed/Other,0.0
+Coconut Chia Bowl,,267,21.2,30.8,10.7,6.5,4.5,139.9,,Breakfast,,Mixed/Other,0.0
+Berry Smoothie,,221,7.4,42.2,8.8,7.6,6.6,167.6,,Breakfast,,Mixed/Other,0.0
+Spinach Omelette,,176,19.8,17.1,7.8,8.4,5.2,144.9,,Breakfast,,Mixed/Other,0.0
+Multigrain Toast with Peanut Butter,,297,24.5,28.8,2.6,3.0,1.6,148.5,,Breakfast,,Mixed/Other,0.0
+Vegetable Poha (Low Oil),,299,23.9,15.7,13.0,3.9,7.0,146.5,,Breakfast,,Mixed/Other,0.0
+Paneer Stuffed Paratha (Low Oil),,266,10.1,38.6,10.9,9.6,0.9,83.3,,Breakfast,,Mixed/Other,0.0
+Vegetable Semiya Upma,,128,11.1,44.0,5.4,6.6,7.4,98.8,,Breakfast,,Mixed/Other,0.0
+Green Smoothie,,189,12.1,34.1,10.3,5.1,4.3,68.9,,Breakfast,,Mixed/Other,0.0
+Carrot Beet Juice,,300,23.8,29.5,5.8,4.3,2.5,47.7,,Breakfast,,Mixed/Other,0.0
+Quinoa Vegetable Bowl,,155,22.7,35.7,3.3,5.5,3.7,160.0,,Lunch,,Mixed/Other,0.0
+Brown Rice with Rajma,,259,14.7,44.8,6.8,6.9,5.4,143.8,,Lunch,,Mixed/Other,0.0
+Grilled Tofu Salad,,200,12.3,38.7,7.0,3.9,1.3,51.6,,Lunch,,Mixed/Other,0.0
+Lentil Soup,,302,10.8,33.2,11.4,8.7,0.9,77.3,,Lunch,,Mixed/Other,0.0
+Vegetable Sambar with Rice,,172,7.4,10.4,9.1,7.8,3.4,117.3,,Lunch,,Mixed/Other,0.0
+Chickpea Salad,,162,13.3,21.0,3.7,6.7,2.5,70.2,,Lunch,,Mixed/Other,0.0
+Grilled Paneer Salad,,194,9.8,16.4,4.4,2.9,3.8,34.0,,Lunch,,Mixed/Other,0.0
+Vegetable Stir Fry,,234,10.4,19.2,10.6,5.7,2.0,78.0,,Lunch,,Mixed/Other,0.0
+Millet Khichdi,,267,12.6,24.3,10.3,4.6,7.6,177.1,,Lunch,,Mixed/Other,0.0
+Spinach Dal with Roti,,166,21.3,45.0,13.2,8.7,1.5,121.5,,Lunch,,Mixed/Other,0.0
+Mixed Bean Curry,,132,9.5,26.1,8.0,5.5,0.0,30.4,,Lunch,,Mixed/Other,0.0
+Vegetable Pulao (Low Oil),,303,14.1,40.5,13.6,8.7,7.4,154.1,,Lunch,,Mixed/Other,0.0
+Tofu Curry with Rice,,306,9.1,37.6,8.4,6.8,6.2,23.3,,Lunch,,Mixed/Other,0.0
+Vegetable Stew,,263,6.9,29.9,11.7,7.0,6.4,189.5,,Lunch,,Mixed/Other,0.0
+Cabbage Peas Sabzi,,197,19.9,15.6,8.6,6.5,2.1,64.7,,Lunch,,Mixed/Other,0.0
+Bottle Gourd Dal,,153,24.6,38.4,9.9,8.5,6.6,49.7,,Lunch,,Mixed/Other,0.0
+Carrot Beans Poriyal,,176,22.2,44.5,14.5,6.3,3.0,154.5,,Lunch,,Mixed/Other,0.0
+Vegetable Korma (Low Fat),,138,21.1,33.1,12.8,6.1,4.9,78.5,,Lunch,,Mixed/Other,0.0
+Palak Paneer (Low Fat),,287,19.7,41.4,12.8,4.9,0.4,121.4,,Lunch,,Mixed/Other,0.0
+Vegetable Lentil Bowl,,205,5.9,19.1,3.8,6.3,6.7,54.3,,Lunch,,Mixed/Other,0.0
+Pumpkin Curry,,156,11.9,41.5,9.4,5.8,0.9,46.9,,Lunch,,Mixed/Other,0.0
+Sweet Potato Salad,,308,24.3,22.5,14.0,2.6,3.3,75.0,,Lunch,,Mixed/Other,0.0
+Vegetable Curry with Quinoa,,155,15.5,18.0,14.4,8.8,0.2,170.6,,Lunch,,Mixed/Other,0.0
+Green Gram Curry,,277,10.8,32.2,2.8,9.0,2.7,31.4,,Lunch,,Mixed/Other,0.0
+Vegetable Soup + Roti,,131,9.7,24.3,11.8,4.8,5.3,151.1,,Lunch,,Mixed/Other,0.0
+Tofu Bhurji with Roti,,121,12.2,13.8,13.2,9.9,1.9,155.9,,Lunch,,Mixed/Other,0.0
+Mixed Veg Dal,,138,24.4,34.9,14.1,5.1,4.9,182.5,,Lunch,,Mixed/Other,0.0
+Zucchini Stir Fry,,318,13.5,31.0,9.2,8.8,4.3,73.1,,Lunch,,Mixed/Other,0.0
+Vegetable Raita + Roti,,197,20.8,24.0,6.4,6.6,2.8,114.2,,Lunch,,Mixed/Other,0.0
+Cucumber Tomato Salad + Dal,,283,23.5,44.5,11.8,5.8,3.8,37.7,,Lunch,,Mixed/Other,0.0
+Grilled Fish Salad,,132,24.9,27.6,2.2,9.7,5.1,176.0,,Dinner,,Mixed/Other,0.0
+Chicken Vegetable Soup,,299,8.7,39.9,10.5,5.9,4.4,112.8,,Dinner,,Mixed/Other,0.0
+Tofu Vegetable Soup,,250,8.9,43.1,4.5,3.1,6.2,172.2,,Dinner,,Mixed/Other,0.0
+Paneer Tikka (Low Fat),,197,9.5,15.0,8.2,6.7,1.0,136.7,,Dinner,,Mixed/Other,0.0
+Vegetable Clear Soup,,125,14.0,33.1,6.8,2.1,6.0,172.4,,Dinner,,Mixed/Other,0.0
+Moong Dal Soup,,209,10.3,16.6,12.1,7.7,2.4,99.8,,Dinner,,Mixed/Other,0.0
+Vegetable Oats Khichdi,,212,20.6,26.3,6.2,5.6,6.1,73.4,,Dinner,,Mixed/Other,0.0
+Quinoa Soup,,309,18.9,25.7,8.8,7.0,6.9,86.8,,Dinner,,Mixed/Other,0.0
+Vegetable Steamed Bowl,,132,8.8,11.6,13.8,3.5,5.8,42.1,,Dinner,,Mixed/Other,0.0
+Lentil Vegetable Stew,,318,18.0,14.0,3.2,7.6,5.3,175.6,,Dinner,,Mixed/Other,0.0
+Grilled Chicken Salad,,226,5.2,38.5,13.6,5.8,6.3,36.2,,Dinner,,Mixed/Other,0.0
+Tofu Salad Bowl,,238,9.3,10.8,9.0,7.0,6.7,178.7,,Dinner,,Mixed/Other,0.0
+Cabbage Soup,,220,23.5,12.9,7.0,5.6,3.3,66.5,,Dinner,,Mixed/Other,0.0
+Carrot Ginger Soup,,247,23.0,29.7,5.9,8.8,1.5,51.8,,Dinner,,Mixed/Other,0.0
+Broccoli Soup,,208,20.8,42.9,9.4,6.6,4.8,128.3,,Dinner,,Mixed/Other,0.0
+Vegetable Millet Bowl,,141,19.8,38.3,13.9,3.0,2.6,127.2,,Dinner,,Mixed/Other,0.0
+Light Veg Curry + Roti,,151,8.5,44.5,4.5,4.1,3.1,142.0,,Dinner,,Mixed/Other,0.0
+Pumpkin Soup,,138,12.4,12.0,8.4,2.6,6.9,26.2,,Dinner,,Mixed/Other,0.0
+Zucchini Soup,,143,16.9,16.4,5.9,9.5,5.0,53.7,,Dinner,,Mixed/Other,0.0
+Mixed Bean Soup,,148,14.0,41.4,3.8,8.9,1.3,120.2,,Dinner,,Mixed/Other,0.0
+Vegetable Lentil Soup,,184,13.7,26.6,12.1,3.7,3.2,81.3,,Dinner,,Mixed/Other,0.0
+Spinach Tofu Bowl,,168,7.4,42.1,3.4,2.5,2.4,113.4,,Dinner,,Mixed/Other,0.0
+Vegetable Clear Broth,,211,8.3,41.5,6.9,8.5,0.1,94.0,,Dinner,,Mixed/Other,0.0
+Tomato Basil Soup,,295,16.3,38.6,8.0,5.4,5.2,113.6,,Dinner,,Mixed/Other,0.0
+Grilled Paneer Salad,,295,13.1,32.7,5.6,9.9,6.9,77.7,,Dinner,,Mixed/Other,0.0
+Vegetable Rice Soup,,143,22.9,15.5,6.9,8.2,3.3,98.0,,Dinner,,Mixed/Other,0.0
+Light Chicken Curry + Roti,,283,21.8,10.7,6.5,6.9,5.1,20.3,,Dinner,,Mixed/Other,0.0
+Vegetable Stir Fry Bowl,,166,10.1,14.1,7.1,9.4,7.3,184.6,,Dinner,,Mixed/Other,0.0
+Ragi Dosa,Veg,179,9.3,36.6,17.2,9.8,0.8,128.1,,Breakfast,,Grains & Cereals,0.0
+Besan Chilla,Veg,314,19.2,14.1,3.2,8.9,3.5,108.8,,Breakfast,,Plant Protein,0.0
+Egg Omelette,Non-Veg,245,15.9,27.8,6.4,5.1,2.1,36.9,,Breakfast,,Animal Protein,44.7
+Boiled Eggs,Non-Veg,120,24.9,13.3,6.6,2.3,1.9,101.8,,Breakfast,,Animal Protein,41.7
+Fruit Bowl,Veg,163,20.6,20.3,15.7,7.1,3.5,156.7,,Breakfast,,Fruits,0.0
+Peanut Chaat,Veg,180,20.7,29.8,8.2,5.2,3.1,202.0,,Breakfast,,Nuts & Seeds,0.0
+Chia Pudding,Veg,222,19.8,11.9,9.5,5.3,2.0,46.9,,Breakfast,,Nuts & Seeds,0.0
+Vegetable Sandwich,Veg,185,13.9,35.1,12.8,8.4,5.5,207.2,,Breakfast,,Mixed/Other,0.0
+Oats Idli,Veg,247,5.4,46.5,13.3,3.4,7.2,33.4,,Breakfast,,Grains & Cereals,0.0
+Vegetable Uttapam,Veg,323,7.0,26.7,18.0,7.3,6.9,70.7,,Breakfast,,Grains & Cereals,0.0
+Green Smoothie,Veg,309,17.0,48.3,15.8,5.8,1.2,203.2,,Breakfast,,Beverages,0.0
+Sprouts Bowl,Veg,161,14.6,30.0,10.6,4.8,6.5,56.7,,Breakfast,,Plant Protein,0.0
+Paneer Sandwich,Veg,255,7.9,29.9,14.0,5.6,6.0,137.7,,Breakfast,,Mixed/Other,0.0
+Banana Smoothie,Veg,177,21.4,30.5,6.4,8.9,2.4,128.8,,Breakfast,,Beverages,0.0
+Apple Oats,Veg,155,8.2,10.9,12.9,5.7,6.2,127.6,,Breakfast,,Grains & Cereals,0.0
+Rajma Curry,Veg,236,11.6,17.9,14.3,8.6,2.2,144.7,,Lunch,,Pulses & Legumes,0.0
+Chole Masala,Veg,300,6.3,49.6,11.7,4.4,4.4,139.7,,Lunch,,Pulses & Legumes,0.0
+Vegetable Biryani,Veg,249,18.5,46.1,17.4,8.6,7.5,147.3,,Lunch,,Grains & Cereals,0.0
+Grilled Chicken Salad,Non-Veg,281,5.6,10.1,12.6,2.8,7.0,225.2,,Lunch,,Animal Protein,55.3
+Paneer Salad,Veg,177,16.7,40.6,16.8,8.1,2.5,178.2,,Lunch,,Plant Protein,0.0
+Tofu Curry,Veg,293,17.0,31.7,12.7,2.7,5.6,242.2,,Lunch,,Plant Protein,0.0
+Vegetable Sambar,Veg,246,14.8,21.4,4.2,6.9,3.6,225.1,,Lunch,,Vegetables,0.0
+Mixed Veg Sabzi,Veg,261,18.8,11.6,17.4,6.2,2.6,134.9,,Lunch,,Vegetables,0.0
+Millet Khichdi,Veg,284,9.6,10.7,2.4,7.9,4.5,125.6,,Lunch,,Grains & Cereals,0.0
+Chicken Curry,Non-Veg,237,15.4,22.8,7.0,7.2,4.2,202.5,,Lunch,,Animal Protein,74.5
+Fish Curry,Non-Veg,210,8.4,32.8,12.4,5.6,5.7,74.7,,Lunch,,Animal Protein,36.9
+Quinoa Bowl,Veg,330,24.3,25.2,6.8,7.1,3.8,171.3,,Lunch,,Grains & Cereals,0.0
+Vegetable Raita,Veg,141,10.6,37.4,9.1,3.2,7.5,165.8,,Lunch,,Mixed/Other,0.0
+Cucumber Salad,Veg,209,10.7,37.8,13.3,10.0,6.1,202.3,,Lunch,,Vegetables,0.0
+Lentil Soup,Veg,306,5.1,30.0,14.0,3.0,5.7,215.2,,Lunch,,Pulses & Legumes,0.0
+Vegetable Soup,Veg,162,10.1,31.0,4.0,2.0,3.5,54.3,,Dinner,,Vegetables,0.0
+Tomato Soup,Veg,257,9.6,24.6,15.9,3.5,2.2,71.7,,Dinner,,Vegetables,0.0
+Spinach Soup,Veg,182,9.2,34.1,5.7,5.7,4.5,219.0,,Dinner,,Vegetables,0.0
+Grilled Fish Salad,Non-Veg,121,19.8,32.7,4.6,8.8,0.1,116.7,,Dinner,,Animal Protein,72.9
+Chicken Soup,Non-Veg,177,12.8,17.3,5.3,5.2,4.1,50.6,,Dinner,,Animal Protein,66.1
+Tofu Soup,Veg,291,17.4,21.1,13.8,8.0,2.8,169.5,,Dinner,,Plant Protein,0.0
+Paneer Tikka,Veg,126,23.2,10.7,16.8,8.1,2.6,33.3,,Dinner,,Plant Protein,0.0
+Vegetable Stir Fry,Veg,152,6.5,42.3,15.8,2.4,5.3,135.9,,Dinner,,Vegetables,0.0
+Pumpkin Soup,Veg,134,19.6,47.3,9.3,6.6,2.2,101.1,,Dinner,,Vegetables,0.0
+Zucchini Stir Fry,Veg,254,7.2,46.6,7.5,5.5,1.3,45.7,,Dinner,,Vegetables,0.0
+Dal Soup,Veg,293,17.8,22.0,7.5,3.0,1.4,233.4,,Dinner,,Pulses & Legumes,0.0
+Vegetable Stew,Veg,232,15.5,25.1,15.2,8.0,7.4,200.5,,Dinner,,Vegetables,0.0
+Grilled Chicken,Non-Veg,243,22.2,23.3,9.3,2.4,5.6,158.3,,Dinner,,Animal Protein,58.7
+Tofu Salad,Veg,161,10.3,15.7,3.5,8.9,1.8,170.2,,Dinner,,Plant Protein,0.0
+Light Khichdi,Veg,130,6.7,13.1,10.3,8.1,4.1,174.6,,Dinner,,Grains & Cereals,0.0
