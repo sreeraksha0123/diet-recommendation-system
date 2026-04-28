@@ -33,12 +33,16 @@ with open(f"{MODEL_DIR}/label_encoders.pkl", "rb") as f:
 with open(f"{MODEL_DIR}/target_encoder.pkl", "rb") as f:
     target_encoder = pickle.load(f)
 
+with open(f"{MODEL_DIR}/W_pgs.pkl", "rb") as f:
+    W_pgs = pickle.load(f)
+
 with open(f"{MODEL_DIR}/feature_config.json", "r") as f:
     feature_config = json.load(f)
 
 print(f"Model loaded successfully.")
 print(f"Target classes: {feature_config['target_classes']}")
-print(f"Training accuracy: {feature_config['fuzzy_mlp_accuracy'] * 100:.2f}%")
+print(f"Plain MLP accuracy:  {feature_config['plain_mlp_accuracy'] * 100:.2f}%")
+print(f"PGS + MLP accuracy:  {feature_config['pgs_mlp_accuracy'] * 100:.2f}%")
 
 
 # ─────────────────────────────────────────
@@ -71,15 +75,14 @@ class UserInput(BaseModel):
 @app.post("/predict")
 def predict(user: UserInput):
     try:
-        # Convert pydantic model to dict
         user_dict = user.dict()
 
         # Rename fields to match training column names
         user_dict["Cholesterol_mg/dL"] = user_dict.pop("Cholesterol_mgdL")
         user_dict["Glucose_mg/dL"]     = user_dict.pop("Glucose_mgdL")
 
-        # Apply same preprocessing as training
-        X = preprocess_input(user_dict, scaler, label_encoders)
+        # Apply same preprocessing as training (PGS transform included)
+        X = preprocess_input(user_dict, scaler, label_encoders, W_pgs)
 
         # Run prediction
         pred_idx   = model.predict(X)[0]
@@ -107,6 +110,6 @@ def predict(user: UserInput):
 def health():
     return {
         "status": "ok",
-        "model": "Fuzzy Membership Layer + MLP (32,16) Stacked",
+        "model": "PGS Layer + MLP (16,8) Stacked",
         "classes": feature_config["target_classes"]
     }

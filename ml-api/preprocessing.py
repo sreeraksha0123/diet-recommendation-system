@@ -3,13 +3,13 @@ preprocessing.py
 Shared preprocessing logic used in BOTH train_model.py AND main.py (FastAPI).
 MUST be kept in sync with train_model.py at all times.
 
-Model: Fuzzy Membership Layer stacked with MLP
-  For each incoming patient record, we:
+Model: PGS (Probabilistic Gradient Score) Layer stacked with MLP
+  For each incoming patient record:
     1. Build raw numeric + encoded categorical feature vector
     2. Normalize numeric features with the fitted StandardScaler
-    3. Compute 18 fuzzy membership scores (6 features x 3 fuzzy sets each)
-       using the same membership functions and thresholds as training
-    4. Concatenate scaled features + fuzzy scores -> input to MLP
+    3. Compute K sigmoid risk scores via x @ W^T (W loaded from model/W_pgs.pkl)
+    4. Compute 3 pairwise log-odds ratios
+    5. Concatenate: 18 original + 3 risk + 3 log-odds = 24-dim input to MLP
 """
 
 import numpy as np
@@ -37,77 +37,45 @@ DEFAULTS = {
 }
 
 
-def trimf(x, a, b, c):
-    """Triangular membership function. Peaks at b, zero at a and c."""
-    result = np.zeros_like(x, dtype=float)
-    left  = (x > a) & (x <= b)
-    right = (x > b) & (x < c)
-    result[left]   = (x[left]  - a) / (b - a + 1e-9)
-    result[right]  = (c - x[right]) / (c - b + 1e-9)
-    result[x == b] = 1.0
-    return np.clip(result, 0.0, 1.0)
+def pgs_transform(X_scaled_in: np.ndarray, W: np.ndarray) -> np.ndarray:
+    """
+    Applies PGS Layer: returns enriched matrix of shape (n, 24).
+
+    Step B: z_k(x) = x . W[k]^T
+            s_k(x) = sigmoid(z_k) — soft class-affinity score
+    Step C: lo_{jk} = log(s_j / s_k) — pairwise log-odds
+    Step D: concatenate [x_scaled || s_0 s_1 s_2 || lo_01 lo_02 lo_12]
+
+    Args:
+        X_scaled_in : shape (n, 18)
+        W           : discriminant weight matrix, shape (K, 18)
+    Returns:
+        np.ndarray of shape (n, 24)
+    """
+    K    = W.shape[0]
+    z    = X_scaled_in @ W.T                        # (n, K)
+    risk = 1.0 / (1.0 + np.exp(-z))                # (n, K) sigmoid
+    eps  = 1e-7
+    lo   = []
+    for j in range(K):
+        for k in range(j + 1, K):
+            lo.append(np.log((risk[:, j] + eps) / (risk[:, k] + eps)).reshape(-1, 1))
+    return np.hstack([X_scaled_in, risk, np.hstack(lo)])
 
 
-def trapmf(x, a, b, c, d):
-    """Trapezoidal membership function. Flat top between b and c."""
-    result = np.zeros_like(x, dtype=float)
-    rise  = (x > a)  & (x < b)
-    top   = (x >= b) & (x <= c)
-    fall  = (x > c)  & (x < d)
-    result[rise] = (x[rise] - a) / (b - a + 1e-9)
-    result[top]  = 1.0
-    result[fall] = (d - x[fall]) / (d - c + 1e-9)
-    return np.clip(result, 0.0, 1.0)
-
-
-FUZZY_RULES = [
-    (3, "BMI", [
-        ("low",  trapmf, (10,  10,  22,  25)),
-        ("med",  trimf,  (22,  27,  32)),
-        ("high", trapmf, (29,  32,  50,  50)),
-    ]),
-    (5, "Cholesterol", [
-        ("low",  trapmf, (100, 100, 180, 200)),
-        ("med",  trimf,  (180, 215, 245)),
-        ("high", trapmf, (230, 250, 400, 400)),
-    ]),
-    (6, "BloodPressure", [
-        ("low",  trapmf, (60,  60,  110, 120)),
-        ("med",  trimf,  (110, 125, 140)),
-        ("high", trapmf, (130, 145, 200, 200)),
-    ]),
-    (7, "Glucose", [
-        ("low",  trapmf, (50,  50,  90,  100)),
-        ("med",  trimf,  (90,  112, 130)),
-        ("high", trapmf, (120, 135, 300, 300)),
-    ]),
-    (8, "Exercise", [
-        ("low",  trapmf, (0,   0,   1.5, 2.5)),
-        ("med",  trimf,  (1.5, 3.5, 5.5)),
-        ("high", trapmf, (4.5, 6.0, 20,  20)),
-    ]),
-    (10, "NutrientImbalance", [
-        ("low",  trapmf, (0,   0,   2,   4)),
-        ("med",  trimf,  (2,   5,   8)),
-        ("high", trapmf, (6,   8,   10,  10)),
-    ]),
-]
-
-
-def fuzzy_membership_transform(X_raw, X_scaled_in):
-    """Appends 18 fuzzy membership scores to the scaled feature matrix."""
-    cols = []
-    for feat_idx, _, fuzzy_sets in FUZZY_RULES:
-        raw_col = X_raw[:, feat_idx]
-        for _, fn, params in fuzzy_sets:
-            cols.append(fn(raw_col, *params).reshape(-1, 1))
-    return np.hstack([X_scaled_in] + cols)
-
-
-def preprocess_input(user_input, scaler, label_encoders):
+def preprocess_input(user_input: dict, scaler, label_encoders, W_pgs: np.ndarray) -> np.ndarray:
     """
     Applies same preprocessing as training to a single user input dict.
-    Returns shape (1, 36) -- 18 original features + 18 fuzzy scores.
+    Returns shape (1, 24) ready for model.predict().
+
+    Args:
+        user_input    : dict with keys matching feature names
+        scaler        : fitted StandardScaler from model/scaler.pkl
+        label_encoders: dict of fitted LabelEncoders from model/label_encoders.pkl
+        W_pgs         : discriminant weight matrix from model/W_pgs.pkl
+
+    Returns:
+        np.ndarray of shape (1, 24)
     """
     for key, default in DEFAULTS.items():
         if key not in user_input or user_input[key] is None:
@@ -128,4 +96,4 @@ def preprocess_input(user_input, scaler, label_encoders):
         X_raw[:, :len(NUMERIC_FEATURES)]
     )
 
-    return fuzzy_membership_transform(X_raw, X_scaled)
+    return pgs_transform(X_scaled, W_pgs)
